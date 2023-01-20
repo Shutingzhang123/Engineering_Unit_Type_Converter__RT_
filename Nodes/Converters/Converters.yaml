@@ -1,0 +1,87 @@
+Name: Converters
+Type: FolderType
+Children:
+- Name: EngineeringUnitConverter1
+  Id: g=14c356a942f75b945e67b78bbbe3ea92
+  Supertype: EUConverter
+  ReferenceType: HasComponent
+  Children:
+  - Name: Source
+    Type: BaseDataVariableType
+    DataType: Number
+    ReferenceType: HasSource
+    Value: {"Type":11,"Body":0.0}
+  - Name: RawMax
+    Type: BaseDataVariableType
+    DataType: Double
+    ReferenceType: HasParameter
+    ModellingRule: Optional
+    Value: 255.0
+  - Name: ScaledMax
+    Type: BaseDataVariableType
+    DataType: Double
+    ReferenceType: HasParameter
+    ModellingRule: Optional
+    Value: 100.0
+  - Name: Mode
+    Type: PropertyType
+    DataType: DynamicLinkMode
+    ReferenceType: HasComponent
+    ModellingRule: Optional
+    Value: 2
+- Name: EngineeringUnitConverter2
+  Id: g=ca17ced0cac149d21a4c4b3d92506edc
+  Supertype: EUConverter
+  ReferenceType: HasComponent
+  Children:
+  - Name: Source
+    Type: BaseDataVariableType
+    DataType: Number
+    ReferenceType: HasSource
+    Value: {"Type":11,"Body":0.0}
+  - Name: RawMin
+    Type: BaseDataVariableType
+    DataType: Double
+    ReferenceType: HasParameter
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "{NodeId:ns=7;g=1bf79f04-fdd6-6e22-3c89-5de6556e62ad}"
+  - Name: ScaledMin
+    Type: BaseDataVariableType
+    DataType: Double
+    ReferenceType: HasParameter
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "{NodeId:ns=7;g=8a1501e4-5dde-8585-1928-b286d2f186ab}"
+  - Name: RawMax
+    Type: BaseDataVariableType
+    DataType: Double
+    ReferenceType: HasParameter
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "{NodeId:ns=7;g=ffe2e110-8fb5-c42b-515d-8029da48e42d}"
+  - Name: ScaledMax
+    Type: BaseDataVariableType
+    DataType: Double
+    ReferenceType: HasParameter
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "{NodeId:ns=7;g=2fd67ebc-10e6-0426-1c1a-7ec7fa7da655}"
+  - Name: Mode
+    Type: PropertyType
+    DataType: DynamicLinkMode
+    ReferenceType: HasComponent
+    ModellingRule: Optional
+    Value: 2

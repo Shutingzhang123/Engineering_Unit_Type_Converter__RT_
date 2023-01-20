@@ -1,0 +1,33 @@
+Name: Model
+Type: FolderType
+Children:
+- Name: per1
+  Id: g=7c472800e9e848381c0796ef93c5dfb3
+  Type: BaseDataVariableType
+  DataType: Byte
+  Value: 0
+- Name: per2
+  Id: g=24c0d72463834aec070734a239e66f8f
+  Type: BaseDataVariableType
+  DataType: Byte
+  Value: 0
+- Name: rawmin
+  Id: g=1bf79f04fdd66e223c895de6556e62ad
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: rawmax
+  Id: g=ffe2e1108fb5c42b515d8029da48e42d
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 255
+- Name: scaledmin
+  Id: g=8a1501e45dde85851928b286d2f186ab
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: scaledmax
+  Id: g=2fd67ebc10e604261c1a7ec7fa7da655
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 100
